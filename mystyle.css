@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background: linear-gradient(135deg, #e11a9b 0%, #e11a9b 0%);
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info-panel {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.current-player {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.whichPlayer {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 10px;
+    border: 2px solid #0f0000;
+}
+
+.black {
+    background: #000;
+}
+
+.white {
+    background: #fff;
+}
+
+#board {
+    display: inline-block;
+    background: #daa520;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #8b6914;
+    position: relative;
+    cursor: pointer;
+    background: #daa520;
+}
+
+.cell:hover {
+    background: #e6b84d;
+}
+
+.cell.occupied {
+    cursor: not-allowed;
+}
+
+
+.stone {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.stone.black {
+    background: radial-gradient(circle at 30% 30%, #555, #000);
+    border: 1px solid #000;
+}
+
+.stone.white {
+    background: radial-gradient(circle at 30% 30%, #fff, #ddd);
+    border: 1px solid #999;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background: #920b70;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background: #5568d3;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.win-message {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3d0230;
+    margin-top: 15px;
+    display: none;
+}
+
+.rules {
+    max-width: 650px;
+    margin-top: 25px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.rules h3 {
+    margin-bottom: 10px;
+}
