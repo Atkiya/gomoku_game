@@ -5,7 +5,7 @@ Also me: watches the opponent line up four stones and plays in the opposite corn
 
 <p align="center">
   <img
-    src="https://n.sinaimg.cn/spider20260206/375/w640h535/20260206/ce9b-3ccccb16a418151b998204e044fe436e.jpg"
+    src="https://i.pinimg.com/474x/9e/55/da/9e55da1831b9493cbbcbd201360e692a.jpg"
     width="700"
     alt="Funny Skill Gomoku meme"
   />
